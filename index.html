@@ -1,31 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Novo EarBuds</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/main.css" rel="stylesheet"/>
+    <!-- link to greensock main library and scroll plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  </head>
+  <body>
 
-<!-- Head of the Document -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link href="css/grid.css" rel="stylesheet" type="text/css" /> <!-- Grid Link -->
-    <link href="css/main.css" rel="stylesheet" type="text/css" /> <!-- Main CSS file Link -->
+    <model-viewer id="model" src="model/earbuds.glb" ar ar-modes="webxr scene-viewer quick-look" ios-src="model/earbuds.usdc" camera-controls poster="images/poster.webp" shadow-intensity="0.72" environment-image="legacy" exposure="1.08" shadow-softness="1" camera-orbit="52.34deg 88.29deg 874.8m" field-of-view="30deg">
+    </model-viewer>  
 
-    <!-- Document Title -->
-    <title>Document</title>
-</head>
-
-<!-- Document Body -->
-<body>
-    
-    <header>
-        <nav>
-        </nav>
-    </header>
-
-    <main>
-    </main>
-
-    <!-- Link to JS file -->
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
