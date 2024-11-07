@@ -14,12 +14,15 @@ model-viewer {
   
   .Hotspot {
     background: url(../images/hotspot.svg) center no-repeat;
-    background-color: white;
     opacity: .5;
     border: 0px;
     padding: 15px;
-    transition: all 1s ease-in-out;
+    transition: all .5s ease-in-out;
     cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   //if the hotspot is not visible/accessible, hide it
@@ -39,7 +42,7 @@ model-viewer {
     font-family: Futura, Helvetica Neue, sans-serif;
     font-size: 18px;
     font-weight: 700;
-    left: calc(100% + 4em);
+    left: calc(75% + 1em);
     overflow-wrap: break-word;
     padding: 0.5em 1em;
     position: absolute;
@@ -59,6 +62,10 @@ model-viewer {
     color: #333;
     line-height: 22px;
     font-weight: 300;
+  }
+  
+  .HotspotAnnotation img {
+    height: 75px;
   }
   
   /* Progress */

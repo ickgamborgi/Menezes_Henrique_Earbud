@@ -5,11 +5,31 @@
 
   // Data
   const infoBoxes = [
-    { title: "Spatial Audio", text: "Immerse yourself in a 360° audio experience with music, shows, and podcasts that surround you in rich, dynamic sound. Create a theater-like experience with audio that feels like it's moving around you", image: "images/spatial-audio.png" },
-    { title: "Hearing Aid Functionality", text: "Designed to enhance your everyday life, these earbuds can capture and amplify voices and sounds from your surroundings, offering a casual hearing aid option when needed", image: "images/hearing-aid.png" },
-    { title: "Built-In Microphone", text: "A powerful ally for your voice calls, meetings, and audio messages! This advanced inner microphone features enhanced noise cancellation and voice isolation, delivering crystal-clear sound quality", image: "images/built-microphone.png" },
-    { title: "Touch Controls", text: "Despite its smaller size, functionality remains a priority. Tap once to pause, twice to skip forward, and three times to go back, providing easy control with a simple touch", image: "images/touch-controls.png" },
-    { title: "Lasting Battery", text: "Charges quickly and outlasts previous models. The case holds enough power to fully charge both earbuds up to five times, keeping you connected all day", image: "images/lasting-battery.png" }
+    {
+      title: "Spatial Audio", 
+      text: "Immerse yourself in a 360° audio experience with music, shows, and podcasts that surround you in rich, dynamic sound. Create a theater-like experience with audio that feels like it's moving around you", 
+      image: "images/spatial-audio.png"
+    },
+    {
+      title: "Hearing Aid Functionality",
+      text: "Designed to enhance your everyday life, these earbuds can capture and amplify voices and sounds from your surroundings, offering a casual hearing aid option when needed",
+      image: "images/hearing-aid.png"
+    },
+    {
+      title: "Built-In Microphone",
+      text: "A powerful ally for your voice calls, meetings, and audio messages! This advanced inner microphone features enhanced noise cancellation and voice isolation, delivering crystal-clear sound quality",
+      image: "images/built-microphone.png"
+    },
+    {
+      title: "Touch Controls",
+      text: "Despite its smaller size, functionality remains a priority. Tap once to pause, twice to skip forward, and three times to go back, providing easy control with a simple touch",
+      image: "images/touch-controls.png"
+    },
+    {
+      title: "Lasting Battery",
+      text: "Charges quickly and outlasts previous models. The case holds enough power to fully charge both earbuds up to five times, keeping you connected all day",
+      image: "images/lasting-battery.png"
+    }
   ];
 
   // Populate info boxes
