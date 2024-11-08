@@ -1,0 +1,31 @@
+@use '../abstracts/variables' as a;
+
+
+/* ---Tablet Styles--- */
+@media screen and (min-width: 768px) {
+
+    model-viewer {
+        height: 800px;
+    }
+
+    .HotspotAnnotation {
+        width: 250px;
+        left: 0;
+        top: 25px;
+        z-index: 1000;
+    }
+}
+
+
+// ---Desktop Styles---
+@media screen and (min-width: 1200px) {
+    model-viewer {
+        height: 800px;
+    }
+
+    .HotspotAnnotation {
+        width: 350px;
+        left: calc(75% + 1em);
+        top: 50%
+    }
+}

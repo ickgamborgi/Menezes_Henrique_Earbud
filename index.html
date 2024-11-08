@@ -7,40 +7,83 @@
     
     <link href="css/main.css" rel="stylesheet"/> <!-- link to main css file-->
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml"> <!-- favicon -->
+    <link rel="stylesheet" href="https://use.typekit.net/tug5hzo.css"> <!-- Myriad Font-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script> <!-- link to greensock main library and scroll plugin -->
 
     <title>AirPods Mini</title>
   </head>
+
   <body>
+    <h1 class="hidden">AirPods Mini</h1>
 
-    <model-viewer id="model" src="model/earbuds.glb" ar ar-modes="webxr scene-viewer quick-look" ios-src="model/earbuds.usdc" camera-controls poster="images/poster.webp" shadow-intensity="0.72" environment-image="legacy" exposure="1.08" shadow-softness="1" camera-orbit="52.34deg 88.29deg 874.8m" field-of-view="30deg">
+    <!-- Header -->
+    <div id="sticky-nav-con">
+      <h2 class="hidden">Header</h2>
+      <header>
+          <!-- Main Navigation -->
+          <nav class="navbar-header full-width-grid-con">
+              <h3 class="hidden">Main Navigation</h3>
+  
+              <div class="logo-header col-start-1">
+                  <a href="index.html"><img src="./images/apple-logo.svg" alt="Apple Logo"></a>
+                  <h4>AirPods Mini</h4>
+              </div>
+  
+              <button id="burger-button"></button>
+  
+              <div class="links-header">
+                  <h4 class="hidden">Links Header</h4>
+                  <ul>
+                      <li><a href="https://www.apple.com" target="_blank" class="nav-item"><h5>Apple</h5></a></li>
+                      <li><a href="https://www.apple.com/ca/shop/goto/store" target="_blank" class="nav-item"><h5>Store</h5></a></li>
+                      <li><a href="https://www.apple.com/ca/mac/" target="_blank" class="nav-item"><h5>Mac</h5></a></li>
+                      <li><a href="https://www.apple.com/ca/ipad/" target="_blank" class="nav-item"><h5>iPad</h5></a></li>
+                      <li><a href="https://www.apple.com/ca/iphone/" target="_blank" class="nav-item"><h5>iPhone</h5></a></li>
+                      <li><a href="https://www.apple.com/ca/tv-home/" target="_blank" class="nav-item"><h5>TV &amp; Home</h5></a></li>
+                      <li><a href="https://support.apple.com/en-ca/?cid=gn-ols-home-hp-tab" target="_blank" class="nav-item"><h5>Support</h5></a></li>
+                  </ul>
+              </div>
+          </nav>
+      </header>
+  </div>
+
+    <main> 
+
+      <model-viewer id="model" class="grid-con" src="model/earbuds.glb" ar ar-modes="webxr scene-viewer quick-look" ios-src="model/earbuds.usdc" camera-controls poster="images/poster.webp" shadow-intensity="0.72" environment-image="legacy" exposure="1.08" shadow-softness="1" camera-orbit="52.34deg 88.29deg 874.8m" field-of-view="30deg">
       
-      <!-- Spatial Audio -->
-      <button class="Hotspot" slot="hotspot-1" data-surface="56 0 354 0 353 0.646 0.311 0.043" data-visibility-attribute="visible">
-        <div class="HotspotAnnotation"></div>
-      </button>
+        <!-- Spatial Audio -->
+        <button class="Hotspot" slot="hotspot-1" data-surface="56 0 354 0 353 0.646 0.311 0.043" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation"></div>
+        </button>
+  
+        <!-- Heading Aid Functionality -->
+        <button class="Hotspot" slot="hotspot-2" data-position="0.18945043503236234m 0.6759337914755313m -0.38600538166242254m" data-normal="0.23000035105500458m -0.11350569819294802m -0.9665486511253875m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation"></div>
+        </button>
+        
+        <!-- Microphone -->
+        <button class="Hotspot" slot="hotspot-3" data-position="-0.051662215274174306m 0.619376589482138m -0.1471144517427329m" data-normal="-0.5275943000971377m -0.287887799463545m -0.7992276705827002m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation"></div>
+        </button>
+  
+        <!-- Touch Controls -->
+        <button class="Hotspot" slot="hotspot-4" data-surface="0 0 5367 223 5366 0.421 0.045 0.534" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation"></div>
+        </button>
+  
+        <!-- Lasting Battery -->
+        <button class="Hotspot" slot="hotspot-5" data-position="-0.20864058893802856m 1.1222384965969963m 0.20253297134123932m" data-normal="-0.1727951390725151m 0.9834209196516258m 0.05500122457237439m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation"></div>
+        </button>
+  
+      </model-viewer>
 
-      <!-- Heading Aid Functionality -->
-      <button class="Hotspot" slot="hotspot-2" data-position="0.18945043503236234m 0.6759337914755313m -0.38600538166242254m" data-normal="0.23000035105500458m -0.11350569819294802m -0.9665486511253875m" data-visibility-attribute="visible">
-        <div class="HotspotAnnotation"></div>
-      </button>
-      
-      <!-- Microphone -->
-      <button class="Hotspot" slot="hotspot-3" data-position="-0.051662215274174306m 0.619376589482138m -0.1471144517427329m" data-normal="-0.5275943000971377m -0.287887799463545m -0.7992276705827002m" data-visibility-attribute="visible">
-        <div class="HotspotAnnotation"></div>
-      </button>
 
-      <!-- Touch Controls -->
-      <button class="Hotspot" slot="hotspot-4" data-surface="0 0 5367 223 5366 0.421 0.045 0.534" data-visibility-attribute="visible">
-        <div class="HotspotAnnotation"></div>
-      </button>
+      <footer>
 
-      <!-- Lasting Battery -->
-      <button class="Hotspot" slot="hotspot-5" data-position="-0.20864058893802856m 1.1222384965969963m 0.20253297134123932m" data-normal="-0.1727951390725151m 0.9834209196516258m 0.05500122457237439m" data-visibility-attribute="visible">
-        <div class="HotspotAnnotation"></div>
-      </button>
+      </footer>
 
-    </model-viewer>  
+    </main>  
 
     <!-- Loads <model-viewer> for browsers: -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
