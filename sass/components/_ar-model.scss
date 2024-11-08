@@ -1,5 +1,14 @@
 @use '../abstracts/variables' as a;
 
+.model-text {
+
+  h4 {
+    font-size: a.$big-font-size;
+  }
+
+}
+
+
 #model {
   margin-top: 1px;
 }
@@ -7,7 +16,7 @@
 model-viewer {
     width: auto;
     max-width: 1200px;
-    height: 900px;
+    height: 750px;
     background-color: a.$light;
     margin: 0 auto;
   }
@@ -84,8 +93,8 @@ model-viewer {
   // Customize the progress bar
   //The ::part CSS pseudo-element represents any element within a shadow tree that has a matching part attribute.
   model-viewer::part(default-progress-bar) {
-    height: 30px;
-    background-color: #E89B36;
+    height: 15px;
+    background-color: a.$grey;
   }
 
   /* AR Rules */
