@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="css/grid.css" rel="stylesheet"> <!-- Link to CSS grid -->
+    <link href="css/main.css" rel="stylesheet"> <!-- Link to Main CSS file -->
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml"> <!-- favicon -->
+    <link rel="stylesheet" href="https://use.typekit.net/tug5hzo.css"> <!-- Myriad Font-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script> <!-- link to greensock main library and scroll plugin -->
+
+    <title>Buy Now</title>
+  </head>
+
+  <body>
+    <h1 class="hidden">AirPods Mini: buy now</h1>
+
+    <!-- Header -->
+    <div id="sticky-nav-con">
+      <h2 class="hidden">Header</h2>
+      <header>
+          <!-- Main Navigation -->
+          <nav class="navbar-header full-width-grid-con">
+              <h3 class="hidden">Main Navigation</h3>
+  
+              <div class="logo-header col-start-1">
+                  <a href="index.html"><img src="../images/apple-logo.svg" alt="Apple Logo">
+                  <h4>AirPods Mini</h4></a>
+              </div>
+  
+              <button id="burger-button"></button>
+  
+              <div class="links-header">
+                  <h4 class="hidden">Links Header</h4>
+                  <ul>
+                      <li><a href="https://www.apple.com" target="_blank" class="nav-item"><h5>Apple</h5></a></li>
+                      <li><a href="https://www.apple.com/ca/shop/goto/store" target="_blank" class="nav-item"><h5>Store</h5></a></li>
+                      <li><a href="https://www.apple.com/ca/mac/" target="_blank" class="nav-item"><h5>Mac</h5></a></li>
+                      <li><a href="https://www.apple.com/ca/ipad/" target="_blank" class="nav-item"><h5>iPad</h5></a></li>
+                      <li><a href="https://www.apple.com/ca/iphone/" target="_blank" class="nav-item"><h5>iPhone</h5></a></li>
+                      <li><a href="https://www.apple.com/ca/tv-home/" target="_blank" class="nav-item"><h5>TV &amp; Home</h5></a></li>
+                      <li><a href="https://support.apple.com/en-ca/?cid=gn-ols-home-hp-tab" target="_blank" class="nav-item"><h5>Support</h5></a></li>
+                  </ul>
+              </div>
+          </nav>
+      </header>
+  </div>
+
+    <main>
+      <h2 class="hidden">Main Content</h2>
+
+      <section id="buy-error" class="grid-con">
+        <h3 class="hidden">Error Message</h3>
+        
+        <img src="./images/error.webp" alt="Error Message Image" class="col-span-full l-col-end-6">
+        <div class="buy-error-text col-span-full l-col-start-6">
+          <h4>Oops... there's no real product!</h4>
+          <p>
+            Hey, don't get me wrong, I'm glad you liked it that much, but unfortunately this is a fantasy product made for study purposes. <span>One day maybe it'll arrive to the market — Apple please hire me! &hearts;</span>
+          </p>
+          <a href="https://behance.com/ickgamborgi"><h5>Visit my portfolio instead</h5></a>
+        </div>
+      </section>
+
+      <footer class="grid-con" id="footer">
+        <h3 class="hidden">Footer</h3>
+
+        <div class="col-span-full footer-index">
+          <h4 class="hidden">Footer Index</h4>
+          <img src="./images/apple-logo-grey.svg" alt="Apple Logo">
+          <h5>&gt;</h5>
+          <a href="https://www.apple.com/ca/airpods/" target="_blank"><h5>AirPods</h5></a>
+          <h5>&gt;</h5>
+          <a href="index.html"><h5>Mini</h5></a>
+        </div>
+
+        <div class="col-span-full">
+          <h4 class="hidden">Footer Navigation</h4>
+          <div class="footer-nav">
+            <div class="footer-shop">
+              <h5>Shop</h5>
+              <a href="https://www.apple.com/ca/shop/goto/store" target="_blank"><h6>Apple Store</h6></a>
+              <a href="https://www.apple.com/ca/mac/" target="_blank"><h6>Mac</h6></a>
+              <a href="https://www.apple.com/ca/ipad/" target="_blank"><h6>iPad</h6></a>
+              <a href="https://www.apple.com/ca/iphone/" target="_blank"><h6>iPhone</h6></a>
+              <a href="https://www.apple.com/ca/tv-home/" target="_blank"><h6>TV &amp; Home</h6></a>
+            </div>
+
+            <div class="footer-shop">
+              <h5>Entertainment</h5>
+              <a href="https://www.apple.com/ca/apple-tv-plus/" target="_blank"><h6>Apple TV+</h6></a>
+              <a href="https://www.apple.com/ca/apple-music/" target="_blank"><h6>Apple Music</h6></a>
+              <a href="https://www.apple.com/ca/apple-podcasts/" target="_blank"><h6>Apple Podcasts</h6></a>
+              <a href="https://www.apple.com/ca/apple-books/" target="_blank"><h6>Apple Books</h6></a>
+              <a href="https://www.apple.com/ca/app-store/" target="_blank"><h6>App Store</h6></a>
+            </div>
+
+            <div class="footer-shop">
+              <h5>For Business</h5>
+              <a href="https://www.apple.com/ca/business/" target="_blank"><h6>Apple and Business</h6></a>
+              <a href="https://www.apple.com/ca/retail/business/" target="_blank"><h6>Shop for Business</h6></a>
+              <a href="https://www.apple.com/ca/financing/#business" target="_blank"><h6>Business Financing</h6></a>
+              <a href="https://www.apple.com/ca/leadership/" target="_blank"><h6>Apple Leadership</h6></a>
+              <a href="https://www.apple.com/ca/newsroom/" target="_blank"><h6>Newsroom</h6></a>
+            </div>
+
+            <div class="footer-shop">
+              <h5>Account</h5>
+              <a href="https://www.apple.com/ca/wallet/" target="_blank"><h6>Wallet</h6></a>
+              <a href="https://www.apple.com/ca/apple-pay/" target="_blank"><h6>Apple Pay</h6></a>
+              <a href="https://www.icloud.com/" target="_blank"><h6>iCloud.com</h6></a>
+            </div>
+          </div>
+          
+
+          <h5 class="text-store">More ways to shop: <a href="https://www.apple.com/ca/retail/" target="_blank">Find an Apple Store</a> or other retailer near you. Or call 1-800-MY-APPLE.</h5>
+        </div>
+
+        <div class="col-span-full footer-bottom">
+          <h4 class="hidden">Footer Info</h4>
+          <h5>Copyright 2024 &copy; Henrique Gamborgi Design </h5>
+          <h6>This product and website are ficticious for portfolio purposes and have no direct relations to Apple Inc.</h6>
+        </div>
+
+      </footer>
+
+    </main>  
+
+      <script src="js/main.js"></script>
+    </body>
+</html>

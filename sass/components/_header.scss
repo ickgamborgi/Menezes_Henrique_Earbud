@@ -16,9 +16,13 @@
 
 
 .logo-header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+
+    a {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
 
     img {
         height: 25px;
@@ -41,7 +45,7 @@
 .links-header ul li a {
     padding: 20px;
     text-transform: capitalize;
-    font-size: a.$h7-font-size;
+    font-size: a.$h6-font-size;
     display: block;
     color: a.$grey;
     cursor: pointer;
@@ -81,8 +85,9 @@
      }
 
      .logo-header {
-        margin-top: 15px;
+        margin-top: 5px;
         margin-bottom: 15px;
+
      }
 
      .links-header {

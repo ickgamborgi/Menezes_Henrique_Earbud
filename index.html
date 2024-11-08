@@ -27,8 +27,8 @@
               <h3 class="hidden">Main Navigation</h3>
   
               <div class="logo-header col-start-1">
-                  <a href="index.html"><img src="../images/apple-logo.svg" alt="Apple Logo"></a>
-                  <h4>AirPods Mini</h4>
+                  <a href="#"><img src="../images/apple-logo.svg" alt="Apple Logo">
+                  <h4>AirPods Mini</h4></a>
               </div>
   
               <button id="burger-button"></button>
@@ -62,8 +62,37 @@
         </div>
       </section>
 
+      <!-- Introduction Section -->
+       <section id="intro" class="grid-con">
+        <h3 class="hidden">Introduction Section</h3>
+        <div class="intro-text col-span-full">
+          <h4>Experience the new <span>AirPods Mini</span>.</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, aut. Velit itaque, omnis minima porro numquam cum quibusdam quo inventore dignissimos ipsam eveniet ratione fugit illum odit facilis! Delectus distinctio assumenda minima, magni dolorem reprehenderit!</p>
+        </div>
+
+        <div class="intro-img-1 col-span-full m-col-start-1 m-col-end-5">
+          <h4 class="hidden">Image 1</h4>
+        </div>
+
+        <div class="intro-img-2 col-span-full m-col-start-5 m-col-end-9">
+          <h4 class="hidden">Image 1</h4>
+        </div>
+
+        <div class="intro-img-3 col-span-full m-col-start-9 m-col-end-13">
+          <h4 class="hidden">Image 1</h4>
+        </div>
+       </section>
+
+      <!-- Model Viewer -->
       <section id="model-viewer">
         <h3 class="hidden">3D Model Viewer</h3>
+
+        <section class="grid-con">
+          <div class="model-text col-span-full">
+            <h4>A completely <span>revolutionary</span> audio experience</h4>
+            <p>Swipe to view our product as a 3D model</p>
+          </div>
+        </section>
 
         <model-viewer id="model" src="model/earbuds.glb" ar ar-modes="webxr scene-viewer quick-look" ios-src="model/earbuds.usdc" camera-controls poster="images/poster.webp" shadow-intensity="0.72" environment-image="legacy" exposure="1.08" shadow-softness="1" camera-orbit="52.34deg 88.29deg 874.8m" field-of-view="30deg">
       
@@ -99,12 +128,12 @@
       <section class="full-width-grid-con" id="x-ray">
         <h3 class="hidden">X-Ray Promotional Image</h3>
 
+        <div class="feature-text col-span-full">
+          <h4>Take a closer look inside the revolution.</h4>
+          <a href="buy.html" target="_blank"><h5>Shop AirPods &gt;</h5></a>
+        </div>
+
         <div class="col-span-full">
-          <!-- <section id="mobile-tablet-view">
-              <h4 class=hidden>Mobile/Tablet View</h4>
-              <img src="images/earbud-x-ray.jpg" alt="x-ray view of earbud">
-              <img src="images/earbud.jpg" alt="textured view of earbud">
-          </section> -->
           <div id="comparison-con">
             <h4 class="hidden">X-Ray Comparison Container</h4>
               <div id="xray">
@@ -116,8 +145,101 @@
       </div>
       </section>
 
+      <section class="grid-con" id="features">
+        <h3 class="hidden">AirPods Mini Features</h3>
 
-      <footer>
+        <div class="feature-text col-span-full">
+          <h4>Discover the features of our new AirPods.</h4>
+          <a href="buy.html" target="_blank"><h5>Shop AirPods &gt;</h5></a>
+        </div>
+
+        <div class="feature-box col-span-full l-col-start-1 l-col-end-5">
+          <img src="./images/spatial-audio.png" alt="Spatial Audio Icon">
+          <h4>Spatial Audio</h4>
+          <p>Immerse yourself in a 360° audio experience with music, shows, and podcasts that surround you in rich, dynamic sound. Create a theater-like experience with audio that feels like it's moving around you.</p>
+        </div>
+
+        <div class="feature-box col-span-full l-col-start-5 l-col-end-9">
+          <img src="./images/hearing-aid.png" alt="Hearing Aid Functionality Icon">
+          <h4>Hearing Aid Functionality</h4>
+          <p>Designed to enhance your everyday life, these earbuds can capture and amplify voices and sounds from your surroundings, offering a casual hearing aid option when needed.</p>
+        </div>
+        <div class="feature-box col-span-full l-col-start-9 l-col-end-13">
+          <img src="./images/built-microphone.png" alt="Built-In Microphone Icon">
+          <h4>Built-In Microphone</h4>
+          <p>A powerful ally for your voice calls, meetings, and audio messages! This advanced inner microphone features enhanced noise cancellation and voice isolation, delivering crystal-clear sound quality.</p>
+        </div>
+        <div class="feature-box col-span-full l-col-start-1 l-col-end-7">
+          <img src="./images/touch-controls.png" alt="Touch Controls Icon">
+          <h4>Touch Controls</h4>
+          <p>Despite its smaller size, functionality remains a priority. Tap once to pause, twice to skip forward, and three times to go back, providing easy control with a simple touch.</p>
+        </div>
+        <div class="feature-box col-span-full l-col-start-7 l-col-end-13">
+          <img src="./images/lasting-battery.png" alt="Battery Icon">
+          <h4>Lasting Battery</h4>
+          <p>Charges quickly and outlasts previous models. The case holds enough power to fully charge both earbuds up to five times, keeping you connected all day.</p>
+        </div>
+      </section>
+
+      <footer class="grid-con" id="footer">
+        <h3 class="hidden">Footer</h3>
+
+        <div class="col-span-full footer-index">
+          <h4 class="hidden">Footer Index</h4>
+          <img src="./images/apple-logo-grey.svg" alt="Apple Logo">
+          <h5>&gt;</h5>
+          <a href="https://www.apple.com/ca/airpods/" target="_blank"><h5>AirPods</h5></a>
+          <h5>&gt;</h5>
+          <a href="#"><h5>Mini</h5></a>
+        </div>
+
+        <div class="col-span-full">
+          <h4 class="hidden">Footer Navigation</h4>
+          <div class="footer-nav">
+            <div class="footer-shop">
+              <h5>Shop</h5>
+              <a href="https://www.apple.com/ca/shop/goto/store" target="_blank"><h6>Apple Store</h6></a>
+              <a href="https://www.apple.com/ca/mac/" target="_blank"><h6>Mac</h6></a>
+              <a href="https://www.apple.com/ca/ipad/" target="_blank"><h6>iPad</h6></a>
+              <a href="https://www.apple.com/ca/iphone/" target="_blank"><h6>iPhone</h6></a>
+              <a href="https://www.apple.com/ca/tv-home/" target="_blank"><h6>TV &amp; Home</h6></a>
+            </div>
+
+            <div class="footer-shop">
+              <h5>Entertainment</h5>
+              <a href="https://www.apple.com/ca/apple-tv-plus/" target="_blank"><h6>Apple TV+</h6></a>
+              <a href="https://www.apple.com/ca/apple-music/" target="_blank"><h6>Apple Music</h6></a>
+              <a href="https://www.apple.com/ca/apple-podcasts/" target="_blank"><h6>Apple Podcasts</h6></a>
+              <a href="https://www.apple.com/ca/apple-books/" target="_blank"><h6>Apple Books</h6></a>
+              <a href="https://www.apple.com/ca/app-store/" target="_blank"><h6>App Store</h6></a>
+            </div>
+
+            <div class="footer-shop">
+              <h5>For Business</h5>
+              <a href="https://www.apple.com/ca/business/" target="_blank"><h6>Apple and Business</h6></a>
+              <a href="https://www.apple.com/ca/retail/business/" target="_blank"><h6>Shop for Business</h6></a>
+              <a href="https://www.apple.com/ca/financing/#business" target="_blank"><h6>Business Financing</h6></a>
+              <a href="https://www.apple.com/ca/leadership/" target="_blank"><h6>Apple Leadership</h6></a>
+              <a href="https://www.apple.com/ca/newsroom/" target="_blank"><h6>Newsroom</h6></a>
+            </div>
+
+            <div class="footer-shop">
+              <h5>Account</h5>
+              <a href="https://www.apple.com/ca/wallet/" target="_blank"><h6>Wallet</h6></a>
+              <a href="https://www.apple.com/ca/apple-pay/" target="_blank"><h6>Apple Pay</h6></a>
+              <a href="https://www.icloud.com/" target="_blank"><h6>iCloud.com</h6></a>
+            </div>
+          </div>
+          
+
+          <h5 class="text-store">More ways to shop: <a href="https://www.apple.com/ca/retail/" target="_blank">Find an Apple Store</a> or other retailer near you. Or call 1-800-MY-APPLE.</h5>
+        </div>
+
+        <div class="col-span-full footer-bottom">
+          <h4 class="hidden">Footer Info</h4>
+          <h5>Copyright 2024 &copy; Henrique Gamborgi Design </h5>
+          <h6>This product and website are ficticious for portfolio purposes and have no direct relations to Apple Inc.</h6>
+        </div>
 
       </footer>
 

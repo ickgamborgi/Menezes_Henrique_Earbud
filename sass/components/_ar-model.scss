@@ -2,15 +2,38 @@
 
 .model-text {
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+
   h4 {
-    font-size: a.$big-font-size;
+      font-size: a.$big-font-size;
+      text-align: center;
+      font-weight: 400;
+      max-width: 1050px;
+
+      span {
+          font-weight: 700;
+      }
   }
 
+  p {
+      font-size: a.$h4-font-size;
+      text-align: center;
+      max-width: 900px;
+      color: a.$grey;
+      opacity: .5;
+  }
 }
 
 
+
+
 #model {
-  margin-top: 1px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  border-radius: a.$round-border;
 }
 
 model-viewer {
@@ -19,6 +42,7 @@ model-viewer {
     height: 750px;
     background-color: a.$white;
     margin: 0 auto;
+    z-index: 999;
   }
   
   // Customize our own hotspot

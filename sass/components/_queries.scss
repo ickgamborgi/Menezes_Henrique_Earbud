@@ -4,7 +4,7 @@
 /* ---Mobile Styles--- */
 @media screen and (min-width: 468px) {
     model-viewer {
-        max-width: 400px;
+        max-width: 80%;
     }
 
     .HotspotAnnotation {
@@ -16,9 +16,32 @@
 /* ---Tablet Styles--- */
 @media screen and (min-width: 768px) {
 
+    .intro-img-1, .intro-img-2, .intro-img-3 {
+        height: 450px;
+        border-radius: a.$round-border;
+        box-shadow: a.$blur-shadow;
+        background-position: center;
+        background-size: cover;
+        transition: a.$fast-transition;
+    }
+
+    .intro-img-1 {
+        background-image: url(../images/poster-vertical-3.jpg);
+    }
+    
+    .intro-img-2 {
+        background-image: url(../images/poster-vertical-6.jpg);
+    }
+    
+    .intro-img-3 {
+        background-image: url(../images/poster-vertical-1.jpg);
+    }
+    
+
     model-viewer {
-        height: 800px;
-        max-width: 800px;
+        height: 750px;
+        max-width: 90%;
+        z-index: 999;
     }
 
     .HotspotAnnotation {
@@ -27,14 +50,35 @@
         top: 25px;
         z-index: 1000;
     }
+
+    .feature-text {
+        h4 {
+            max-width: 650px;
+        }
+    }
+
+    input[type=range]::-webkit-slider-thumb {
+        margin-top: -5px;
+        margin-left: 8px;
+        width: 25px;
+        height: 25px;
+      }
+      
+      input[type=range]::-moz-range-thumb {
+          margin-top: -5px;
+          margin-left: 8px;
+          width: 25px;
+          height: 25px;
+      }
 }
 
 
 // ---Desktop Styles---
 @media screen and (min-width: 1200px) {
     model-viewer {
-        height: 1200px;
+        height: 750px;
         max-width: 1000px;
+        z-index: 999;
     }
 
     .HotspotAnnotation {
@@ -43,4 +87,54 @@
         top: 50%;
         z-index: 1000;
     }
+
+    .intro-img-1, .intro-img-2, .intro-img-3 {
+        height: 750px;
+        border-radius: a.$round-border;
+        box-shadow: a.$blur-shadow;
+        background-position: center;
+        background-size: cover;
+        transition: a.$fast-transition;
+    }
+    
+    .intro-img-1 {
+        background-image: url(../images/poster-vertical-3.jpg);
+    }
+    
+    .intro-img-2 {
+        background-image: url(../images/poster-vertical-6.jpg);
+    }
+    
+    .intro-img-3 {
+        background-image: url(../images/poster-vertical-1.jpg);
+    }
+
+    .feature-text {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: end;
+
+        h4 {
+            max-width: 650px;
+        }
+    }
+
+    input[type=range]::-webkit-slider-thumb {
+        margin-top: -5px;
+        margin-left: 13px;
+        width: 25px;
+        height: 25px;
+      }
+      
+      input[type=range]::-moz-range-thumb {
+          margin-top: -5px;
+          margin-left: 13px;
+          width: 25px;
+          height: 25px;
+      }
+
+      .footer-nav {
+        flex-direction: row;
+        gap: 100px;
+      }
 }

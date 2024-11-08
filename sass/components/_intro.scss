@@ -1,0 +1,60 @@
+@use '../abstracts/variables' as a;
+
+#intro {
+    padding-top: 125px;
+    padding-bottom: 125px;
+}
+
+.intro-text {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 125px;
+
+    h4 {
+        font-size: a.$big-font-size;
+        text-align: center;
+        font-weight: 400;
+        max-width: 750px;
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    p {
+        font-size: a.$h4-font-size;
+        text-align: center;
+        max-width: 900px;
+        color: a.$grey;
+    }
+}
+
+.intro-img-1, .intro-img-2, .intro-img-3 {
+    height: 300px;
+    border-radius: a.$round-border;
+    box-shadow: a.$blur-shadow;
+    background-position: center;
+    background-size: cover;
+    transition: a.$fast-transition;
+
+    &:hover {
+        transform: scale(1.015);
+    }
+}
+
+.intro-img-1 {
+    background-image: url(../images/poster-horizontal-5.jpg);
+    margin-bottom: 25px;
+}
+
+.intro-img-2 {
+    background-image: url(../images/poster-horizontal-3.jpg);
+    margin-bottom: 25px;
+}
+
+.intro-img-3 {
+    background-image: url(../images/poster-horizontal-6.jpg);
+}
