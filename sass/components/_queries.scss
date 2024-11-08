@@ -7,6 +7,10 @@
         max-width: 400px;
     }
 
+    .HotspotAnnotation {
+        z-index: 1000;
+    }
+
 }
 
 /* ---Tablet Styles--- */
@@ -36,6 +40,7 @@
     .HotspotAnnotation {
         width: 350px;
         left: calc(75% + 1em);
-        top: 50%
+        top: 50%;
+        z-index: 1000;
     }
 }
