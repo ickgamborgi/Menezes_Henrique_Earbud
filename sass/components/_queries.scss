@@ -1,11 +1,20 @@
 @use '../abstracts/variables' as a;
 
 
+/* ---Mobile Styles--- */
+@media screen and (min-width: 468px) {
+    model-viewer {
+        max-width: 400px;
+    }
+
+}
+
 /* ---Tablet Styles--- */
 @media screen and (min-width: 768px) {
 
     model-viewer {
         height: 800px;
+        max-width: 800px;
     }
 
     .HotspotAnnotation {
@@ -20,7 +29,8 @@
 // ---Desktop Styles---
 @media screen and (min-width: 1200px) {
     model-viewer {
-        height: 800px;
+        height: 1200px;
+        max-width: 1000px;
     }
 
     .HotspotAnnotation {
