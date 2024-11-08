@@ -1,8 +1,14 @@
+@use '../abstracts/variables' as a;
+
+#model {
+  margin-top: 1px;
+}
+
 model-viewer {
     width: auto;
     max-width: 1200px;
-    height: 700px;
-    background-color: white;
+    height: 900px;
+    background-color: a.$light;
     margin: 0 auto;
   }
   
@@ -14,7 +20,7 @@ model-viewer {
   
   .Hotspot {
     background: url(../images/hotspot.svg) center no-repeat;
-    opacity: .5;
+    opacity: .4;
     border: 0px;
     padding: 15px;
     transition: all .5s ease-in-out;
@@ -34,38 +40,44 @@ model-viewer {
 
   .HotspotAnnotation {
     visibility: hidden;
-    background-color: #fff;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    background-color: #ffffffde;
+    border-radius: a.$round-border;
+    box-shadow: 0 2px 4px rgba(0, 4, 8, 0.25);
     color: rgba(0, 0, 0, 0.8);
     display: block;
-    font-family: Futura, Helvetica Neue, sans-serif;
+    font-family: a.$first-font;
     font-size: 18px;
     font-weight: 700;
-    left: calc(75% + 1em);
+    left: 0;
     overflow-wrap: break-word;
     padding: 0.5em 1em;
     position: absolute;
-    top: 50%;
-    width: 350px;
+    top: 25px;
+    width: 200px;
     text-align: left;
+    z-index: 1000;
   }
 
   .HotspotAnnotation h2 {
-    font-size: 18px;
+    font-size: a.$h5-font-size;
     margin-bottom: 5px;
     width: fit-content;
-    margin-bottom: 25px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: a.$black;
   }
   
   .HotspotAnnotation p {
-    color: #333;
+    color: a.$grey;
+    font-size: a.$p-font-size;
     line-height: 22px;
     font-weight: 300;
+    margin-bottom: 25px;
   }
   
   .HotspotAnnotation img {
-    height: 75px;
+    height: 45px;
+    margin-top: 25px;
   }
   
   /* Progress */
@@ -90,7 +102,7 @@ model-viewer {
     white-space: nowrap;
     bottom: 16px;
     padding: 0px 16px 0px 40px;
-    font-family: Roboto Regular, Helvetica Neue, sans-serif;
+    font-family: a.$first-font;
     font-size: 14px;
     color:#4285f4;
     height: 36px;

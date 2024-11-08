@@ -1,3 +1,15 @@
+// HEADER
+(() => {
+const burgerButton = document.querySelector("#burger-button")
+const navbarLinks = document.querySelector(".links-header")
+burgerButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active');
+    burgerButton.classList.toggle('active');
+})
+})();
+
+
+// MODEL-VIEWER
 (() => {
   // Variables
   const model = document.querySelector("#model");

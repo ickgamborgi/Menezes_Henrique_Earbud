@@ -1,2 +1,34 @@
 @use 'fonts';
 
+// Fonts
+$first-font: -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+$second-font: "myriad-pro", sans-serif;
+
+//Colors
+$white: #FFFFFF;
+$light: #FAFAFC;
+$grey: #6C6C6C;
+$dark-grey: #434344;
+$black: #1D1D1F;
+$blue: #2A64C5;
+$orange: #A94C1D;
+
+$footer-background: #F5F5F7;
+
+// Text Sizes
+$h1-font-size: 64px;
+$h2-font-size: 48px;
+$h3-font-size: 40px;
+$h4-font-size: 28px;
+$h5-font-size: 21px;
+$h6-font-size: 19px;
+$h7-font-size: 17px;
+$p-font-size: 14px;
+$smaller-font-size: 12px;
+
+//Transitions
+$fast-transition: all .25s ease-in-out;
+$default-transition: all .6s ease-in-out;
+$slow-transition: all 1s ease-in-out;
+
+$round-border: 20px;
