@@ -63,10 +63,9 @@
     height: 25px;
     width: 30px;
     background: url(../images/burger-button.svg) no-repeat center;
-    transition: all .5s ease;
     border: 0;
     position: absolute;
-    top: 12px;
+    top: 20px;
     right: 10%;
     cursor: pointer;
     display: none;
@@ -87,8 +86,8 @@
      }
 
      .logo-header {
-        margin-top: 5px;
-        margin-bottom: 15px;
+        margin-top: 15px;
+        margin-bottom: 30px;
 
         a {
             margin-top: 10px;
@@ -136,9 +135,14 @@
         transform: translateY(0);
     }
 
+    #burger-button {
+        animation: x-to-burger 0.5s forwards;
+    }
+
     #burger-button.active {
         height: 20px;
         background: url(../images/close-button.svg) no-repeat center;
+        animation: burger-to-x 0.5s forwards;
     }
 
 }
@@ -150,5 +154,25 @@
     }
     to {
         transform: translateY(0px);
+    }
+}
+
+/* Rotate Burger Icon to X */
+@keyframes burger-to-x {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+/* Rotate X Icon back to Burger */
+@keyframes x-to-burger {
+    0% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(0deg);
     }
 }
