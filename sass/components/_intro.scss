@@ -1,5 +1,6 @@
 @use '../abstracts/variables' as a;
 
+
 #intro {
     padding-top: 125px;
     padding-bottom: 125px;
@@ -14,7 +15,7 @@
     margin-bottom: 125px;
 
     h4 {
-        font-size: a.$big-font-size;
+        font-size: a.$h2-font-size;
         text-align: center;
         font-weight: 400;
         max-width: 750px;
@@ -25,7 +26,7 @@
     }
 
     p {
-        font-size: a.$h4-font-size;
+        font-size: a.$h6-font-size;
         text-align: center;
         max-width: 900px;
         color: a.$grey;
@@ -33,7 +34,7 @@
 }
 
 .intro-img-1, .intro-img-2, .intro-img-3 {
-    height: 300px;
+    aspect-ratio: 16/9;
     border-radius: a.$round-border;
     box-shadow: a.$blur-shadow;
     background-position: center;

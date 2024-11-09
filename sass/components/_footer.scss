@@ -25,7 +25,12 @@
     a h5 {
         font-size: a.$p-font-size;
         cursor: pointer;
-        color: a.$grey;
+
+        &:hover {
+            color: a.$blue;
+            text-decoration: underline;
+        }
+
     }
 }
 
@@ -45,6 +50,10 @@
         color: a.$blue;
         text-decoration: underline;
         cursor: pointer;
+
+        &:hover {
+            color: a.$dark-blue;
+        }
     }
 }
 
