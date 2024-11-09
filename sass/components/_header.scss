@@ -1,10 +1,12 @@
 @use '../abstracts/variables' as a;
 
 #sticky-nav-con {
+    position: sticky;
     background-color: a.$white;
     top: 0;
     z-index: 1000;
     animation: headerSlide 1s forwards;
+    border-bottom: 1px solid #80808089;
 }
 
 .navbar-header {
@@ -88,6 +90,10 @@
         margin-top: 5px;
         margin-bottom: 15px;
 
+        a {
+            margin-top: 10px;
+        }
+
      }
 
      .links-header {
@@ -131,7 +137,8 @@
     }
 
     #burger-button.active {
-        transform: rotate(90deg);
+        height: 20px;
+        background: url(../images/close-button.svg) no-repeat center;
     }
 
 }
