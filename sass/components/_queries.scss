@@ -16,6 +16,11 @@
 /* ---Tablet Styles--- */
 @media screen and (min-width: 768px) {
 
+    .hero-video-container video {
+        aspect-ratio: 16/10;
+        object-fit: cover;
+    }
+
     .intro-text {
     
         h4 {
@@ -167,6 +172,12 @@
 
 // ---Desktop Styles---
 @media screen and (min-width: 1200px) {
+
+    .hero-video-container video {
+        aspect-ratio: 16/7.5;
+        object-fit: cover;
+    }
+
     .intro-text {
     
         h4 {

@@ -1,6 +1,17 @@
 @use '../abstracts/variables' as a;
 
 
+#hero {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-video-container video {
+    aspect-ratio: 16/11;
+    object-fit: cover;
+    object-position: center;
+}
+
 #intro {
     padding-top: 125px;
     padding-bottom: 125px;
