@@ -1,3 +1,5 @@
+console.log("Javascript file is connected!");
+
 // HEADER
 (() => {
 const burgerButton = document.querySelector("#burger-button")
@@ -6,6 +8,57 @@ burgerButton.addEventListener('click', () => {
     navbarLinks.classList.toggle('active');
     burgerButton.classList.toggle('active');
 })
+})();
+
+// SCROLL ANIMATION
+(() => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  const canvas = document.querySelector("#explode-view");
+  const context = canvas.getContext("2d");
+
+  canvas.width = 1920;
+  canvas.height = 1080;
+
+  const frameCount = 185; //amount of still images
+
+  const images = []; //array to hold images
+
+  // Fill the array with loaded images and point to them
+  for(let i = 0; i < frameCount; i++) {
+      const img = new Image();
+      img.src = `video/animation/explode_${(i+1).toString().padStart(4, '0')}.webp`;
+      images.push(img);
+  }
+  
+  // Create an object, which will have a property called frames. Similar to how we animate a dom object and its properties
+  const buds = {
+      frame: 0
+  }
+
+  gsap.to(buds, {
+    frame: frameCount - 1,
+    snap: "frame", 
+    scrollTrigger: {
+        trigger: "#explode-view",
+        pin: true,
+        scrub: 1,
+        markers: false,
+        start: "top top"
+    },
+    onUpdate: render,
+})
+
+  // When image is first loaded into the array, call the function.
+  images[0].addEventListener("load", render)
+
+  function render() {
+      console.log(images[buds.frame]);
+      const currentFrame = Math.min(Math.floor(buds.frame), frameCount - 1);
+      context.clearRect(0, 0, canvas.width, canvas.height);
+      context.drawImage(images[buds.frame], 0, 0);
+  }
+
 })();
 
 
