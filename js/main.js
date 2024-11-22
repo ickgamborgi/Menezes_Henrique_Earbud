@@ -44,7 +44,8 @@ burgerButton.addEventListener('click', () => {
         pin: true,
         scrub: 1,
         markers: false,
-        start: "top top"
+        start: "top top",
+        end: "+=3000",
     },
     onUpdate: render,
 })
