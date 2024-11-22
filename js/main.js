@@ -42,10 +42,9 @@ burgerButton.addEventListener('click', () => {
     scrollTrigger: {
         trigger: "#explode-view",
         pin: true,
-        scrub: 1,
-        markers: false,
         start: "top top",
-        end: "+=3000",
+        end: "250% bottom",
+        scrub: 2,
     },
     onUpdate: render,
 })
@@ -152,4 +151,20 @@ burgerButton.addEventListener('click', () => {
   }
 
   slider.addEventListener("input", moveDivisor);
+})();
+
+// COLOR PICKER
+(() => {
+  const earbuds = document.querySelector("#default-color");
+  const colorButtons = document.querySelectorAll("#color-con button");
+
+  function swapColor(e) {
+
+      let selected = e.currentTarget.id;
+      earbuds.src = `images/${selected}.jpg`
+  }
+
+  colorButtons.forEach(colorButton => {
+      colorButton.addEventListener("click", swapColor);
+  })
 })();

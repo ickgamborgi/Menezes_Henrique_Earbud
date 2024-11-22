@@ -1,6 +1,6 @@
 @use '../abstracts/variables' as a;
 
-
+// X-ray
 #x-ray {
   padding-top: 100px;
   padding-bottom: 50px;
@@ -104,9 +104,79 @@ transform: scale(1.3);
 }
 
 
+// Color Variations
+#colors {
+  padding-top: 100px;
+  padding-bottom: 75px;
+  background-color: a.$light;
+}
+
+.color-text {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-bottom: 25px;
+
+  h4 {
+    font-size: a.$h3-font-size;
+    font-weight: 600;
+    max-width: 380px;
+  }
+
+  a h5 {
+    color: a.$blue;
+    font-size: a.$h7-font-size;
+    font-weight: 400;
+    cursor: pointer;
+    transition: a.$fast-transition;
+
+    &:hover {
+      color: a.$dark-blue;
+    }
+  }
+}
+
+#colors {
+  img {
+    border-radius: a.$round-border;
+  }
+}
+
+#color-con {
+  display: flex;
+  gap: 15px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+
+  button {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: a.$fast-transition;
+  border: 1px solid #6c6c6c4a; 
+
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: a.$blur-shadow;
+  }
+  } 
+
+}
+
+#default {background-color: a.$dark-grey};
+#white {background-color: a.$light;       
+};
+#blue { background-color: #6ABCEA;};
+#yellow {background-color: #E5DE55;};
+#green {background-color: #44752E;};
+#pink {background-color: #F99BC1;};
 
 
 
+
+// Features
 #features {
   padding-top: 100px;
   padding-bottom: 100px;
