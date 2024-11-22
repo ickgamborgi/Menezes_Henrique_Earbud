@@ -148,14 +148,7 @@
 }
 
 // Animation
-@keyframes headerSlide {
-    from {
-        transform: translateY(-100px);
-    }
-    to {
-        transform: translateY(0px);
-    }
-}
+
 
 /* Rotate Burger Icon to X */
 @keyframes burger-to-x {

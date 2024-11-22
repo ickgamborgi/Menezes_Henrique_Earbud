@@ -61,7 +61,6 @@ burgerButton.addEventListener('click', () => {
 
 })();
 
-
 // MODEL-VIEWER
 (() => {
   // Variables
@@ -167,4 +166,176 @@ burgerButton.addEventListener('click', () => {
   colorButtons.forEach(colorButton => {
       colorButton.addEventListener("click", swapColor);
   })
+})();
+
+// GSAP ANIMATIONS
+(() => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.from( ".intro-text", 1.5, {
+    scrollTrigger: {
+      trigger: "#intro",
+      start: "top center",
+      end: "top bottom",
+      toggleActions: "play none none reverse"
+    },
+    opacity: 0,
+    scale: 0.8,
+    ease: "back.out", 
+    delay: .25
+  })
+
+
+  gsap.from(".intro-img", 1, {
+    scrollTrigger: {
+      trigger: ".intro-img",
+      toggleActions: "play none none reverse",
+    },
+    opacity: 0,
+    y: 250,
+    duration: 1,
+    ease: "ease-in",
+    stagger: .3
+  });
+
+  gsap.from( ".model-text", 1.5, {
+    scrollTrigger: {
+      trigger: ".hero-animation",
+      start: "top center",
+      end: "top bottom",
+      toggleActions: "play none none reverse"
+    },
+    opacity: 0,
+    scale: 0.8,
+    ease: "back.out", 
+    delay: .25
+  })
+
+  gsap.from("#model", 1, {
+    scrollTrigger: {
+      trigger: ".model-text",
+      toggleActions: "play none none reverse",
+    },
+    scale: 0.5,
+    opacity: 0,
+    y: 250,
+    duration: 1,
+    ease: "ease-in",
+    stagger: .3
+  });
+
+  gsap.from( ".feature-text", 1.5, {
+    scrollTrigger: {
+      trigger: "#xray",
+      toggleActions: "play none none reverse"
+    },
+    opacity: 0,
+    y: 100, 
+    duration: 1,
+    ease: "power2.out", 
+    delay: .25
+  })
+
+  gsap.from("#xray", 1, {
+    scrollTrigger: {
+      trigger: "#xray",
+      toggleActions: "play none none reverse",
+    },
+    opacity: 0,
+    y: 250,
+    duration: 1,
+    ease: "ease-in",
+    scale: 0.8,
+    delay: .25
+  });
+
+  gsap.from("#comparison-con input", 1, {
+    scrollTrigger: {
+      trigger: "#xray",
+      toggleActions: "play none none reverse",
+    },
+    opacity: 0,
+    y: 250,
+    duration: 1,
+    ease: "ease-in",
+    scale: 0.8,
+    delay: .25
+  });
+
+  gsap.from( ".color-text", 1.5, {
+    scrollTrigger: {
+      trigger: ".color-text",
+      toggleActions: "play none none reverse"
+    },
+    opacity: 0,
+    y: 100, 
+    duration: 1,
+    ease: "power2.out", 
+    delay: .25
+  })
+
+  gsap.from(".color-switcher", 1, {
+    scrollTrigger: {
+      trigger: ".color-switcher",
+      toggleActions: "play none none reverse",
+    },
+    opacity: 0,
+    y: 250,
+    duration: 1,
+    ease: "ease-in",
+    scale: 0.8,
+    delay: .25
+  });
+  
+  gsap.from( ".feature-text-2", 1.5, {
+    scrollTrigger: {
+      trigger: ".feature-text-2",
+      toggleActions: "play none none reverse"
+    },
+    opacity: 0,
+    y: 100, 
+    duration: 1,
+    ease: "power2.out", 
+    delay: .25
+  })
+
+  gsap.from(".feature-box", 1, {
+    scrollTrigger: {
+      trigger: ".feature-box",
+      toggleActions: "play none none reverse",
+    },
+    scale: 0.5,
+    opacity: 0,
+    y: 250,
+    duration: 1,
+    ease: "ease-in",
+    stagger: .3
+    
+  });
+
+
+  gsap.from("#footer", 1, {
+    scrollTrigger: {
+      trigger: "#footer",
+      toggleActions: "play none none reverse",
+    },
+    opacity: 0,
+    x: -250,
+    duration: 2,
+    ease: "ease-in",
+    delay: .5
+  });
+
+  gsap.from(".footer-shop", 1, {
+    scrollTrigger: {
+      trigger: ".footer-nav",
+      toggleActions: "play none none reverse",
+    },
+    duration: 1,
+    opacity: 0,
+    x: -250,
+    ease: "ease-in",
+    stagger: .1,
+    delay: .25
+  });
 })();
