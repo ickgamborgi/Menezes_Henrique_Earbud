@@ -53,20 +53,24 @@
       <h2 class="hidden">Main Content</h2>
 
       <!-- Hero Section -->
-      <section id="hero">
-        <h3 class="hidden">Hero Section</h3>
-        
-        <div class="hero-video-container">
-          <h4 class="hidden">Video</h4>
-          <video src="video/hero-video.mp4" playsinline muted autoplay></video>
-        </div>
-      </section>
+
+        <section id="animation">
+          <canvas id="explode-view"></canvas> 
+        </section>
+
+        <section class="hero-animation">
+          <div class="hero-video-container">
+            <h4 class="hidden">Video</h4>
+            <video src="video/promotional-video.mp4" playsinline muted autoplay loop></video>
+          </div>
+        </section>
+
 
       <!-- Introduction Section -->
        <section id="intro" class="grid-con">
         <h3 class="hidden">Introduction Section</h3>
         <div class="intro-text col-span-full">
-          <h4>Experience the new <span>AirPods Mini</span>.</h4>
+          <h4>Meet the new <span>AirPods Mini</span>.</h4>
           <p>Discover a whole new way to listen. With a compact design that fits effortlessly into your life, AirPods Mini redefines sound with immersive audio, effortless connectivity, and features that amplify every moment. Dive into music, stay connected on calls, and enjoy clarity that cuts through the noise!</p>
         </div>
 
@@ -129,7 +133,7 @@
         <h3 class="hidden">X-Ray Promotional Image</h3>
 
         <div class="feature-text col-span-full">
-          <h4>Take a closer look inside the revolution.</h4>
+          <h4>Take a closer look inside our product.</h4>
           <a href="buy.html" target="_blank"><h5>Shop AirPods &gt;</h5></a>
         </div>
 
@@ -245,9 +249,16 @@
 
     </main>  
 
+    <!-- Loads scroll animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
+
     <!-- Loads <model-viewer> for browsers: -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
       <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+     
+    <!-- Connects to main js file -->
       <script src="js/main.js"></script>
+
     </body>
 </html>
