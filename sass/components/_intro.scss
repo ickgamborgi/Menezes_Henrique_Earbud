@@ -60,11 +60,6 @@
     box-shadow: a.$blur-shadow;
     background-position: center;
     background-size: cover;
-    transition: a.$fast-transition;
-
-    &:hover {
-        transform: scale(1.015);
-    }
 }
 
 .intro-img-1 {

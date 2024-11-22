@@ -3,18 +3,6 @@
 
 /* ---Mobile Styles--- */
 @media screen and (min-width: 468px) {
-    model-viewer {
-        max-width: 80%;
-    }
-
-    .HotspotAnnotation {
-        z-index: 1000;
-    }
-
-    .Hotspot {
-      display: none;
-    }
-
 }
 
 /* ---Tablet Styles--- */
@@ -52,7 +40,6 @@
         box-shadow: a.$blur-shadow;
         background-position: center;
         background-size: cover;
-        transition: a.$fast-transition;
     }
 
     .intro-img-1 {
@@ -96,22 +83,29 @@
 
     model-viewer {
         height: 750px;
-        max-width: 90%;
+        max-width: 75%;
         z-index: 999;
+        margin-top: 50px;
+        margin-bottom: 100px;
     }
+
+    
 
     .HotspotAnnotation {
         width: 250px;
         left: 0;
         top: 25px;
         z-index: 1000;
+        display: block;
     }
 
-    .Hotspot {
-      display: flex;
-    }
+    button.Hotspot {
+      width: 40px;
+      height: 35px;
+      display: block;
+     }
 
-    .feature-text {
+    .feature-text, .feature-text-2 {
         display: flex;
         flex-direction: column;
         gap: 50px;
@@ -142,7 +136,7 @@
         gap: 50px;
         margin-bottom: 25px;
       
-        h4 {
+        h5 {
           font-size: a.$h2-font-size;
           font-weight: 600;
           max-width: 450px;
@@ -270,6 +264,7 @@
         left: calc(75% + 1em);
         top: 50%;
         z-index: 1000;
+        display: block;
     }
 
     .intro-img-1, .intro-img-2, .intro-img-3 {
@@ -278,7 +273,6 @@
         box-shadow: a.$blur-shadow;
         background-position: center;
         background-size: cover;
-        transition: a.$fast-transition;
     }
     
     .intro-img-1 {
@@ -308,7 +302,7 @@
       justify-content: space-between;
       align-items: end;
 
-      h4 {
+      h5 {
         font-size: a.$h1-font-size;
           max-width: 600px;
       }
@@ -318,7 +312,7 @@
         padding-top: 150px;
     }
 
-    .feature-text {
+    .feature-text, .feature-text-2 {
         display: flex;
         flex-direction: row;
         align-items: end;

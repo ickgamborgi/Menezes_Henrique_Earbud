@@ -58,13 +58,6 @@
           <canvas id="explode-view"></canvas> 
         </section>
 
-        <section class="hero-animation">
-          <div class="hero-video-container">
-            <h4 class="hidden">Video</h4>
-            <video src="video/promotional-video.mp4" playsinline muted autoplay loop></video>
-          </div>
-        </section>
-
 
       <!-- Introduction Section -->
        <section id="intro" class="grid-con">
@@ -74,18 +67,25 @@
           <p>Discover a whole new way to listen. With a compact design that fits effortlessly into your life, AirPods Mini redefines sound with immersive audio, effortless connectivity, and features that amplify every moment. Dive into music, stay connected on calls, and enjoy clarity that cuts through the noise!</p>
         </div>
 
-        <div class="intro-img-1 col-span-full m-col-start-1 m-col-end-5">
+        <div class="intro-img intro-img-1 col-span-full m-col-start-1 m-col-end-5">
           <h4 class="hidden">Image 1</h4>
         </div>
 
-        <div class="intro-img-2 col-span-full m-col-start-5 m-col-end-9">
+        <div class="intro-img intro-img-2 col-span-full m-col-start-5 m-col-end-9">
           <h4 class="hidden">Image 1</h4>
         </div>
 
-        <div class="intro-img-3 col-span-full m-col-start-9 m-col-end-13">
+        <div class="intro-img intro-img-3 col-span-full m-col-start-9 m-col-end-13">
           <h4 class="hidden">Image 1</h4>
         </div>
        </section>
+
+       <section class="hero-animation">
+        <div class="hero-video-container">
+          <h4 class="hidden">Video</h4>
+          <video src="video/promotional-video.mp4" playsinline muted autoplay loop></video>
+        </div>
+      </section>
 
       <!-- Model Viewer -->
       <section id="model-viewer">
@@ -153,29 +153,32 @@
         <h3 class="hidden">Color Variations</h3>
 
           <div class="col-span-full" id="color-picker">
+            <h4 class="hidden">Color Container</h4>
 
-            <div class="feature-text col-span-full">
-              <h4>Express yourself in different colors.</h4>
+            <div class="color-text col-span-full">
+              <h5>Express yourself in different colors.</h5>
               <a href="buy.html" target="_blank"><h5>Shop AirPods &gt;</h5></a>
             </div>
 
               <div id="color-con" clas="col-span-full">
-                  <button id="default"></button>
-                  <button id="white"></button>
-                  <button id="blue"></button>
-                  <button id="yellow"></button>
-                  <button id="green"></button>
-                  <button id="pink"></button>
+                <h5 class="hidden">Color Switcher</h5>
+                  <button class="color-button" id="default"></button>
+                  <button class="color-button" id="white"></button>
+                  <button class="color-button" id="blue"></button>
+                  <button class="color-button" id="yellow"></button>
+                  <button class="color-button" id="green"></button>
+                  <button class="color-button" id="pink"></button>
               </div>
 
-              <img src="images/default.jpg" id="default-color">
+              <img src="images/default.jpg" class="color-switcher" id="default-color">
+
             </div>
       </section>
 
       <section class="grid-con" id="features">
         <h3 class="hidden">AirPods Mini Features</h3>
 
-        <div class="feature-text col-span-full">
+        <div class="feature-text-2 col-span-full">
           <h4>Discover the features of our new AirPods.</h4>
           <a href="buy.html" target="_blank"><h5>Shop AirPods &gt;</h5></a>
         </div>

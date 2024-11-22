@@ -38,8 +38,8 @@
 
 model-viewer {
     width: auto;
-    max-width: 1200px;
-    height: 750px;
+    max-width: 80%;
+    height: 350px;
     background-color: a.$white;
     margin: 0 auto;
     z-index: 999;
@@ -49,6 +49,7 @@ model-viewer {
  button.Hotspot {
   width: 40px;
   height: 35px;
+  display: none;
  }
   
   .Hotspot {
@@ -77,7 +78,7 @@ model-viewer {
     border-radius: a.$round-border;
     box-shadow: 0 2px 4px rgba(0, 4, 8, 0.25);
     color: rgba(0, 0, 0, 0.8);
-    display: block;
+    display: none;
     font-family: a.$first-font;
     font-size: 18px;
     font-weight: 700;
@@ -89,6 +90,7 @@ model-viewer {
     width: 200px;
     text-align: left;
     z-index: 1000;
+    
   }
 
   .HotspotAnnotation h2 {
