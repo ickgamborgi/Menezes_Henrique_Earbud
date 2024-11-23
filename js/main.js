@@ -20,7 +20,7 @@ burgerButton.addEventListener('click', () => {
   canvas.width = 1920;
   canvas.height = 1080;
 
-  const frameCount = 185; //amount of still images
+  const frameCount = 170; //amount of still images
 
   const images = []; //array to hold images
 
@@ -43,7 +43,7 @@ burgerButton.addEventListener('click', () => {
         trigger: "#explode-view",
         pin: true,
         start: "top top",
-        end: "250% bottom",
+        end: "500% bottom",
         scrub: 2,
     },
     onUpdate: render,
@@ -174,12 +174,11 @@ burgerButton.addEventListener('click', () => {
 
   gsap.from( ".intro-text", 1, {
     scrollTrigger: {
-      trigger: ".intro-text",
-      toggleActions: "play none none reverse"
+      trigger: "#explode-view",
     },
     opacity: 0,
     ease: "power2.in", 
-    delay: .25
+    delay: 1
   })
 
 
@@ -224,38 +223,8 @@ burgerButton.addEventListener('click', () => {
       toggleActions: "play none none reverse"
     },
     opacity: 0,
-    y: 100, 
-    duration: 1,
     ease: "power2.in", 
-    delay: .25
   })
-
-  gsap.from("#xray", 1, {
-    scrollTrigger: {
-      trigger: ".feature-text",
-      toggleActions: "play none none reverse",
-    },
-    opacity: 0,
-    y: 250,
-    duration: 1,
-    ease: "power2.in", 
-    scale: 0.8,
-    delay: .5
-  })
-
-  gsap.from("#comparison-con input", 1.5, {
-    scrollTrigger: {
-      trigger: ".feature-text",
-      toggleActions: "play none none reverse",
-    },
-    opacity: 0,
-    y: 250,
-    duration: 1,
-    ease: "power2.in", 
-    scale: 0.8,
-    delay: .5
-  })
-
 
   gsap.from( ".color-text", 1, {
     scrollTrigger: {
@@ -263,35 +232,16 @@ burgerButton.addEventListener('click', () => {
       toggleActions: "play none none reverse"
     },
     opacity: 0,
-    y: 100, 
-    duration: 1,
     ease: "power2.in", 
-    delay: .25
   })
 
-  gsap.from(".color-switcher", 1.5, {
-    scrollTrigger: {
-      trigger: ".color-text",
-      toggleActions: "play none none reverse",
-    },
-    opacity: 0,
-    y: 250,
-    duration: 1,
-    ease: "power2.in", 
-    scale: 0.8,
-    delay: .5
-  });
-  
-  gsap.from( ".feature-text-2", 1.5, {
+  gsap.from( ".feature-text-2", 1, {
     scrollTrigger: {
       trigger: ".feature-text-2",
       toggleActions: "play none none reverse"
     },
     opacity: 0,
-    y: 100, 
-    duration: 1,
     ease: "power2.in", 
-    delay: .25
   })
 
   gsap.from(".feature-box", 1, {

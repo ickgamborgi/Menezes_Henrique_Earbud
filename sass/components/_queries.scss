@@ -8,10 +8,11 @@
 /* ---Tablet Styles--- */
 @media screen and (min-width: 768px) {
 
-    .hero-video-container video {
-        aspect-ratio: 16/10;
-        object-fit: cover;
-    }
+  .hero-video-container video {
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 16/10;
+  }
 
     .intro-text {
     
@@ -27,9 +28,9 @@
         }
     
         p {
-            font-size: a.$h5-font-size;
+            font-size: a.$h6-font-size;
             text-align: center;
-            max-width: 900px;
+            max-width: 600px;
             color: a.$grey;
         }
     }
@@ -201,8 +202,9 @@
 @media screen and (min-width: 1200px) {
 
     .hero-video-container video {
-        aspect-ratio: 16/7.5;
-        object-fit: cover;
+      object-fit: cover;
+      object-position: center;
+      aspect-ratio: 16/7;
     }
 
     .intro-text {
@@ -219,9 +221,9 @@
         }
     
         p {
-            font-size: a.$h4-font-size;
+            font-size: a.$h6-font-size;
             text-align: center;
-            max-width: 900px;
+            max-width: 600px;
             color: a.$grey;
         }
     }

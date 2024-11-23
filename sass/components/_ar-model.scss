@@ -119,9 +119,16 @@ model-viewer {
   // Customize the progress bar
   //The ::part CSS pseudo-element represents any element within a shadow tree that has a matching part attribute.
   model-viewer::part(default-progress-bar) {
-    height: 15px;
+    height: 0px;
     background-color: a.$grey;
+    opacity: 0;
   }
+
+  model-viewer::part(poster) {
+    background-size: cover;
+    border-radius: a.$round-border;
+    background-position: center;
+  }  
 
   /* AR Rules */
   

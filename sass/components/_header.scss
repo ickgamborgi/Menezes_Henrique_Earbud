@@ -4,9 +4,10 @@
     position: sticky;
     background-color: a.$white;
     top: 0;
-    z-index: 1000;
+    z-index: 10000;
     animation: headerSlide 1s forwards;
     border-bottom: 1px solid #80808089;
+    background-color: white;
 }
 
 .navbar-header {

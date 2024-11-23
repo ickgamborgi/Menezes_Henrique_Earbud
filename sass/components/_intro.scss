@@ -10,6 +10,7 @@
     width: 100%;
 }
 
+
 #explode-view {
     width: 100%;
     height: 100vh;
@@ -20,11 +21,13 @@
 .hero-video-container video {
     object-fit: cover;
     object-position: center;
+    aspect-ratio: 16/12;
 }
 
 #intro {
-    padding-top: 125px;
     padding-bottom: 125px;
+    margin-top: -250px;
+    z-index: 1000;
 }
 
 .intro-text {
@@ -33,7 +36,8 @@
     flex-direction: column;
     align-items: center;
     gap: 50px;
-    margin-bottom: 125px;
+    margin-bottom: 75px;
+    z-index: 1000;
 
     h4 {
         font-size: a.$h2-font-size;
