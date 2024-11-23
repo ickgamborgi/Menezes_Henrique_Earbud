@@ -43,7 +43,7 @@ burgerButton.addEventListener('click', () => {
         trigger: "#explode-view",
         pin: true,
         start: "top top",
-        end: "500% bottom",
+        end: "300% bottom",
         scrub: 2,
     },
     onUpdate: render,
